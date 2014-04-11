@@ -22,7 +22,7 @@ ROW FORMAT SERDE 'parquet.hive.serde.ParquetHiveSerDe'
 STORED AS
 INPUTFORMAT 'parquet.hive.DeprecatedParquetInputFormat'
 OUTPUTFORMAT 'parquet.hive.DeprecatedParquetOutputFormat'
-LOCATION '/tmp/parquet/avro/'
+LOCATION '/tmp/parquet/proto/'
 TBLPROPERTIES ('parquet.compression'='gzip', 'parquet.enable.dictionary'='true');
 
 SELECT * FROM avro;
