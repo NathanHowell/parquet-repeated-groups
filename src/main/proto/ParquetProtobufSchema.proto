@@ -1,0 +1,10 @@
+option java_package = "com.godaddy.parquet.proto";
+
+message Person {
+    optional int64 id = 1;
+    message Inner {
+        optional int64 x = 1;
+        optional double y = 2;
+    }
+    repeated Inner woot = 2;
+}

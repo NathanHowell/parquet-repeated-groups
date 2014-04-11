@@ -1,0 +1,19 @@
+{"namespace": "com.godaddy.parquet.avro",
+ "type": "record",
+ "name": "Person",
+ "fields": [
+     {"name": "id", "type": ["null", "long"]},
+     {"name": "woot", "type": {
+         "type": "array",
+         "items": {
+             "type": "record",
+             "name": "Inner",
+             "fields": [
+                 {"name": "x", "type": ["null", "long"]},
+                 {"name": "y", "type": ["null", "double"]}
+                 ]
+             }
+         }
+     }
+ ]
+}

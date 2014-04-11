@@ -1,0 +1,6 @@
+.idea/
+metastore_db/
+target/
+.*.swp
+*.iml
+derby.log
